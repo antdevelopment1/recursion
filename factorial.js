@@ -7,3 +7,11 @@ function factorial(n) {
 }
 
 console.log(factorial(3))
+
+// Determine the factorial recursively
+function factorial2(n) {
+    if (n === 1) return 1;
+    return n * factorial2(n - 1)
+}
+
+console.log(factorial2(3))
